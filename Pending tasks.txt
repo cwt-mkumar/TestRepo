@@ -1,6 +1,0 @@
---Calender function
---Java.lang.pointer exception solution
---static use should be removed
---reporting part
---screenshot issue
---Page Pbject Model working?
