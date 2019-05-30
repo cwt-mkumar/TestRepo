@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [MultiBrowser]" parallel="tests">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="version" value=""/>
+  <parameter name="platform" value="Windows"/>
+  <test name="Sample5(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="version" value=""/>
+    <parameter name="platform" value="Windows"/>
+    <classes>
+      <class name="Driver.Engine">
+        <methods>
+          <include name="start" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- Driver.Engine -->
+    </classes>
+  </test> <!-- Sample5(failed) -->
+</suite> <!-- Failed suite [MultiBrowser] -->

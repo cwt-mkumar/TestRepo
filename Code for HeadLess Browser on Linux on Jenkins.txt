@@ -1,0 +1,63 @@
+
+else if(browser.equalsIgnoreCase("HtmlUnitDriver")){
+
+driver=initializeHtmlUnit();
+}
+
+=====================================
+private static WebDriver initializeHtmlUnit() {
+
+              log.debug("Using HtmlUnitDriver");
+              driver = new HtmlUnitDriver(BrowserVersion.FIREFOX_45, true) {
+
+                     @Override
+                     protected WebClient modifyWebClient(final WebClient client) {
+                           try {
+                                  client.getOptions().setUseInsecureSSL(true);
+                                  // Enable TLSv1.2 support
+                                  client.getOptions().setSSLClientProtocols(new String[] { "TLSv1", "TLSv1.2" });
+                                  if (log.isDebugEnabled()) {
+                                         final StringBuffer tmpStr = new StringBuffer("Supported SSL Protocols: ");
+                                         final String[] protocols = client.getOptions().getSSLClientProtocols();
+                                         if (protocols == null) {
+                                                tmpStr.append("null");
+                                         } else {
+                                                tmpStr.append("[");
+                                                for (final String protocol : protocols) {
+                                                       tmpStr.append("\"" + protocol + "\",");
+                                                }
+                                                tmpStr.append("]");
+                                         }
+                                         log.debug(tmpStr.toString());
+                                  }
+                           } catch (final Exception e) {
+                                  log.info("Failed to setUseInsecureSSL", e);
+                           }
+
+                           final RefreshHandler rh = new RefreshHandler() {
+                                  @Override
+                                  public void handleRefresh(final Page page, final URL url, final int seconds) { // nothing
+                                  }
+                           };
+                           client.setRefreshHandler(rh);
+                           // wait for any background JavaScript execution to wait for 10
+                           // secs
+                           client.waitForBackgroundJavaScript(10000);
+                           client.getOptions().setJavaScriptEnabled(true);
+                           client.getOptions().setCssEnabled(true);
+                           client.getOptions().setThrowExceptionOnScriptError(false);
+                           client.getOptions().setThrowExceptionOnFailingStatusCode(false);
+
+                           /*
+                           * final JavaScriptEngine scriptEngine =
+                           * client.getJavaScriptEngine(); final HtmlUnitContextFactory
+                           * factory = scriptEngine.getContextFactory(); // changing the
+                           * value so that it would be picked
+                           * factory.enterContext().setOptimizationLevel(9);
+                           */
+
+                           return client;
+                     }
+              };
+              return driver;
+       }

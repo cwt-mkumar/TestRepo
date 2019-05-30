@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="46.237094">
+<testcase classname="Payment Mode A all test cases" name="Search Flow" time="46.237094">
+<system-out><![CDATA[Given launch Browser and open application...................................passed
+And select the "Amadeus" and enter "OYVVTV".................................passed
+And select the destination..................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
