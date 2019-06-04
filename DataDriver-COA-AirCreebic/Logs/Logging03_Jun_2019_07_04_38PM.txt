@@ -1,0 +1,14 @@
+Jun 03, 2019 7:04:39 PM EndToEndTest.EndToEndTest checkSuiteExecutionFlag
+INFO: Test Suite Name: EndToEndTest  Run Mode: Yes
+Jun 03, 2019 7:04:59 PM testBase.TestBase navigateTo_HomePage
+INFO: Application opened successfully
+Jun 03, 2019 7:06:08 PM testBase.TestBase closeBrowser
+INFO: Driver closed Successfully
+Jun 03, 2019 7:06:08 PM testBase.TestBase tearDown
+INFO: Test Case Completed-- Closing the browser
+Jun 03, 2019 7:06:08 PM EndToEndTest.Regression checkSuiteExecutionFlag
+INFO: Test Suite Name: Regression  Run Mode: Yes
+Jun 03, 2019 7:06:08 PM testBase.TestBase tearDown
+INFO: Test Case Completed-- Closing the browser
+Jun 03, 2019 7:06:08 PM testBase.TestBase tearDown
+INFO: Test Case Completed-- Closing the browser

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MultiBrowser" parallel="tests">
+
+  <!--   <test name="Sample1"> 
+		<parameter name="browser" value="safari" />
+		<parameter name="version" value="" />
+		<parameter name="platform" value="mac" />
+		<classes>
+			<class name="com.engine.Engine" />
+		</classes>
+	  </test> 	-->
+	
+   <!--   <test name="Sample2"> 
+		<parameter name="browser" value="chrome" />
+		<parameter name="version" value="" />
+		<parameter name="platform" value="MAC" />
+		<classes>
+			<class name="com.engine.Engine" />
+		</classes>
+	 </test>   
+	
+    <test name="Sample3"> 
+		<parameter name="browser" value="firefox" />
+		<parameter name="version" value="" />
+		<parameter name="platform" value="Windows" />
+		<classes>
+			<class name="com.engine.Engine" />
+		</classes>
+	 </test>  
+	 
+	   
+    <test name="Sample4">
+		<parameter name="browser" value="firefox" />
+		<parameter name="version" value="" />
+		<parameter name="platform" value="Windows"/>
+		<classes>
+			<class name="com.engine.Engine"/>
+		</classes> 
+	</test>   -->
+	
+	
+    <test name="Sample5">
+		<parameter name="browser" value="chrome" />
+		<parameter name="version" value="" />
+		<parameter name="platform" value="Windows" />
+		<classes>
+			<class name="Driver.Engine"/>
+		</classes> 
+	</test>   
+  
+ <!--    <test name="Sample6">
+		<parameter name="browser" value="InternetExplorer" />
+		<parameter name="version" value="" />
+		<parameter name="platform" value="Windows" />
+		<classes>
+			<class name="com.engine.Engine" />
+		</classes>
+	</test>    
+	      	
+      <test name="Sample7">
+		<parameter name="browser" value="safari" />
+		<parameter name="version" value="" />
+		<parameter name="platform" value="Windows" />
+		<classes>
+			<class name="com.engine.Engine" />
+		</classes>
+	  </test> 
+ 	  
+  	 <test name="Sample2">
+		<parameter name="browser" value="internet explorer" />
+		<parameter name="version" value="" />
+		<parameter name="platform" value="Windows" />
+		<classes>
+			<class name="com.engine.Engine" />
+		</classes>
+	</test> 	   
+	
+  <test name="Sample4">
+		<parameter name="browser" value="safari" />
+		<parameter name="version" value="" />
+		<parameter name="platform" value="mac" />
+		<classes>
+			<class name="com.engine.Engine" />
+		</classes>
+	</test> -->
+	
+</suite> 
+

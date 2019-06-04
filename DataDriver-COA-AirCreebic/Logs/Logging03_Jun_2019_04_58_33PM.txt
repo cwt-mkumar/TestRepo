@@ -1,0 +1,2 @@
+Jun 03, 2019 4:58:34 PM EndToEndTest.Regression checkSuiteExecutionFlag
+INFO: Test Suite Name: Regression  Run Mode: Yes

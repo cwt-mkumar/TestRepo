@@ -1,0 +1,137 @@
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>FP</groupId>
+  <artifactId>CheapOair.com-Hybrid</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+  <name>CheapOair.com</name>
+  <url>http://maven.apache.org</url>
+  <dependencies>
+              <dependency>
+                     <groupId>org.seleniumhq.selenium</groupId>
+                     <artifactId>selenium-server</artifactId>
+                     <version>3.4.0</version>
+              </dependency>
+              <dependency>
+                     <groupId>org.seleniumhq.selenium</groupId>
+                     <artifactId>selenium-java</artifactId>
+                     <version>3.4.0</version>
+              </dependency>
+              <dependency>
+                     <groupId>log4j</groupId>
+                     <artifactId>log4j</artifactId>
+                     <version>1.2.17</version>
+              </dependency>
+              <dependency>
+                     <groupId>org.testng</groupId>
+                     <artifactId>testng</artifactId>
+                     <version>6.8.1</version>
+                     <scope>compile</scope>
+              </dependency>
+              <dependency>
+                     <groupId>net.sourceforge.jexcelapi</groupId>
+                     <artifactId>jxl</artifactId>
+                     <version>2.6.12</version>
+              </dependency>
+              <dependency>
+                     <groupId>org.apache.poi</groupId>
+                     <artifactId>poi</artifactId>
+                     <version>3.13</version>
+              </dependency>
+              <dependency>
+                     <groupId>org.apache.poi</groupId>
+                     <artifactId>poi-ooxml</artifactId>
+                     <version>3.13</version>
+              </dependency>
+              <dependency>
+                     <groupId>org.apache.poi</groupId>
+                     <artifactId>poi-ooxml-schemas</artifactId>
+                     <version>3.13</version>
+              </dependency>
+              <!-- dependency>
+                     <groupId>org.apache.maven.plugins</groupId>
+                     <artifactId>maven-compiler-plugin</artifactId>
+                     <version>3.1</version>
+                     <type>maven-plugin</type>
+              </dependency>-->
+              <!--<dependency>
+                     <groupId>com.efsavage.jquery</groupId>
+                     <artifactId>jquery-maven</artifactId>
+                     <version>1.8.2</version>
+              </dependency> -->
+              <!-- <dependency>
+                     <groupId>com.oracle</groupId>
+                     <artifactId>ojdbc6</artifactId>
+                     <version>11.2.0.4</version>
+              </dependency> -->
+              <dependency>
+                     <groupId>commons-httpclient</groupId>
+                     <artifactId>commons-httpclient</artifactId>
+                     <version>3.1</version>
+              </dependency>
+              <dependency>
+                     <groupId>org.seleniumhq.selenium</groupId>
+                     <artifactId>selenium-htmlunit-driver</artifactId>
+                     <version>2.47.1</version>
+              </dependency>
+              <dependency>
+                     <groupId>org.seleniumhq.selenium</groupId>
+                     <artifactId>selenium-support</artifactId>
+                     <version>2.47.1</version>
+              </dependency>
+              <!-- <dependency>
+                  <groupId>com.aventstack</groupId>
+                  <artifactId>extentreports</artifactId>
+                  <version>3.0.6</version>
+              </dependency> -->
+              
+    
+		<dependency>
+		    <groupId>com.aventstack</groupId>
+		    <artifactId>extentreports</artifactId>
+		    <version>3.0.7</version>
+		</dependency>
+
+ </dependencies>
+
+       <properties>
+              <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+       </properties>
+       
+       <build>
+              <sourceDirectory>${basedir}/src/main/java</sourceDirectory>
+            <testSourceDirectory>${basedir}/src/test/java</testSourceDirectory>
+              <plugins>
+                     <plugin>
+                           <groupId>org.apache.maven.plugins</groupId>
+                           <artifactId>maven-surefire-plugin</artifactId>
+                           <version>2.19</version>
+                           <configuration>
+                           <suiteXmlFiles>
+                                  <suiteXmlFile>singleBrowser.xml</suiteXmlFile>
+                           </suiteXmlFiles>
+       
+                           
+                           <!-- includes>
+                                         <include>**/*TestRunner.java</include>
+                                  </includes>-->
+                     
+                                  
+                           </configuration>
+                     </plugin>
+                     <plugin>
+                           <inherited>true</inherited>
+                           <groupId>org.apache.maven.plugins</groupId>
+                           <artifactId>maven-compiler-plugin</artifactId>  
+                           <version>3.1</version>
+                           <configuration>
+                                  <encoding>UTF-8</encoding>
+                                  <source>1.8</source>
+                                  <target>1.8</target>
+                           </configuration>
+                     </plugin>
+              </plugins>
+       </build>
+</project>

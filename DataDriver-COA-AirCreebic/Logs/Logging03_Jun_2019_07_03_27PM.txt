@@ -1,0 +1,2 @@
+Jun 03, 2019 7:03:29 PM EndToEndTest.EndToEndTest checkSuiteExecutionFlag
+INFO: Test Suite Name: EndToEndTest  Run Mode: Yes

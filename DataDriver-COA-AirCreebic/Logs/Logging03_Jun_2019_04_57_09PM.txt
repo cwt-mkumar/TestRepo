@@ -1,0 +1,8 @@
+Jun 03, 2019 4:57:30 PM EndToEndTest.Regression checkSuiteExecutionFlag
+INFO: Test Suite Name: Regression  Run Mode: Yes
+Jun 03, 2019 4:57:43 PM testBase.TestBase tearDown
+INFO: Test Case Completed-- Closing the browser
+Jun 03, 2019 4:57:47 PM EndToEndTest.Regression EndToEndTes3
+INFO: Exception in endToEndTest3
+Jun 03, 2019 4:57:47 PM testBase.TestBase tearDown
+INFO: Test Case Completed-- Closing the browser

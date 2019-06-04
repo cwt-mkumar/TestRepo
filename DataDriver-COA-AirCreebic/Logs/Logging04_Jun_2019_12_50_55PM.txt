@@ -1,0 +1,6 @@
+Jun 04, 2019 12:50:57 PM EndToEndTest.EndToEndTest checkSuiteExecutionFlag
+INFO: Test Suite Name: EndToEndTest  Run Mode: Yes
+Jun 04, 2019 12:51:22 PM EndToEndTest.Regression checkSuiteExecutionFlag
+INFO: Test Suite Name: Regression  Run Mode: Yes
+Jun 04, 2019 12:51:47 PM EndToEndTest.Regression EndToEndTes3
+INFO: Exception in endToEndTest3

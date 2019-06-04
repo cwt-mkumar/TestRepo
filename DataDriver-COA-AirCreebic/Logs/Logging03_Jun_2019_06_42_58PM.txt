@@ -1,0 +1,4 @@
+Jun 03, 2019 6:42:59 PM EndToEndTest.Regression checkSuiteExecutionFlag
+INFO: Test Suite Name: Regression  Run Mode: Yes
+Jun 03, 2019 6:43:16 PM testBase.TestBase navigateTo_HomePage
+INFO: Application opened successfully
